@@ -1,18 +1,17 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Cyrus Nolan",
+    "label": "Aerospace M.Eng. Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "can62@cornell.edu",
+    "phone": "(760) 822-4482",
+    "summary": "Studying Aerospace Engineering, working towards a job as a GNC engineer.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "23 Observatory Cir",
+      "postalCode": "NY 14850",
+      "city": "Ithaca",
       "countryCode": "US",
-      "region": "California"
+      "region": "New York"
     },
     "profiles": [
       {
@@ -152,12 +151,10 @@
     {
       "language": "German",
       "fluency": "Native speaker"
-      "icon":""
     },
     {
       "language": "English",
       "fluency": "Fluent"
-      "icon":""
     }
   ],
   "interests": [
