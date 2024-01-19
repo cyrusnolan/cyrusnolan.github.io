@@ -6,10 +6,9 @@ subtitle: Aerospace Masters of Engineering Student studying guidance, navigation
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: 
+  image_circular: false # crops the image to make it circulars
   more_info: >
-
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
