@@ -4,7 +4,7 @@ title: Bowling Ball Dynamics
 description: MAE 5730 - Intermediate Dynamics course project
 img:
 importance: 3
-category: work
+category: School
 ---
 Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
 

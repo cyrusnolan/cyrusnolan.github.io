@@ -16,6 +16,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 <h2> About </h2>
+[Resume (pdf)](/assets/pdf/Cyrus%20Nolan%20Resume.pdf)  
+
 After graduating with my B.S. in Mechanical Engineering in 2019, I became interested in physical therapy and biomechanics because I had injuries and aspirations to play professional football. I worked in physical therapy while I rehabbed and trained for a professional tryout. During this time, I began to realize that there are much more interesting, cool, and impactful things I could do than play professional sports. I was inspired by the major events in spaceflight like Crew Dragon Demo-2, Falcon Heavy landing all 3 boosters for the first time, Starship's landing, Inspiration 4, and the Return to Space documentary. These events prompted me to return to school to study aerospace engineering.
 
 Before applying to school, I was exploring possible careers in aerospace engineering when I came across a job description for launch vehicle guidance, navigation, and control. It struck me as majorly appealing, I think because it's as close as you can get to driving the vehicle. In order to start a career as a launch vehicle GNC engineer, I knew I needed more development, so I joined the Cornell M.Eng. program with that purpose. I really enjoy my coursework and projects, and I've performed well.

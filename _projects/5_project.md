@@ -4,7 +4,7 @@ title: Control of Inverted Pendulum
 description: MAE 5780 - Feedback Control Systems lab
 img:
 importance: 5
-category: work
+category: School
 ---
 Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
 

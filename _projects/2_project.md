@@ -4,7 +4,7 @@ title: ISS Trajectory Ground Track
 description: Personal project
 img:
 importance: 2
-category: work
+category: Personal
 ---
 Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
 

@@ -4,7 +4,7 @@ title: Magneto-Attitude Propulsion
 description: Master of Engineering Project, advised by Dr. Mason Peck.
 img:
 importance: 1
-category: work
+category: School
 ---
 Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
 

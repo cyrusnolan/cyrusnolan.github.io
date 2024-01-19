@@ -4,7 +4,7 @@ title: Pontryagin Trajectory Optimization
 description: MAE 5830 - Astronautic Optimization course project
 img:
 importance: 4
-category: work
+category: School
 ---
 Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
 
