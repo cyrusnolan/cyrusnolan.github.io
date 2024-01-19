@@ -6,74 +6,30 @@ img:
 importance: 3
 category: School
 ---
-Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
+[Bowling Ball Dynamics](/assets/pdf/ID5730Fall2023.pdf)  
 
-Overview of the model:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/map_full_sim.jpg" title="simulation overview" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="assets/video/bowling_ball.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 
-Example initial conditions:
+Parameters and initial conditions used to produce the results above:
 ```matlab
-% mission.StartDate = datetime(2021,1,1,12,0,0); % specify start date
-mission.StartDate = datetime; % start date is current time
-mission.Duration = hours(3);
-mission.mdl = "spacecraft_model";
-open_system(mission.mdl);
+% PARAMS REGULAR BALL
+p.g = 9.81; % m s^-2
+p.R = .1080; % m
+p.m = 6.35; % kg
+p.I1 = .001; % kg m^2
+p.I2 = .001; % kg m^2
+p.I3 = .03; % kg m^2
 
-% Orbit init
-orbit.semiMajorAxis = "7079e3";
-orbit.inclination = "pi/2";
-orbit.raan = "3*pi/2";
-orbit.aol = "pi/2"; % argument of lattitude
-
-% Attitude init
-attitude0.q = "[0 -sin(pi/4) -sin(pi/4) 0]";
-attitude0.w = "[0 0 0]";
-
-% Gains
-kp1 = 3.906e-3; kp2 = 3.906e-3; kp3 = 3.906e-3;
-kd1 = 0.1; kd2 = 0.1; kd3 = 0.1;
-
-% configure orbit
-orbit.blk = mission.mdl + "/Orbit Propagator";
-set_param(orbit.blk, ...
-    startDate = "juliandate(mission.StartDate)", ...
-    semiMajorAxis = orbit.semiMajorAxis, ...
-    inclination = orbit.inclination, ...
-    raan = orbit.raan, ...
-    argLat = orbit.aol, ...
-    centralBody = "Earth");
-
-% configure attitude
-attitude.blk = mission.mdl + "/Attitude Dynamics";
-set_param(attitude.blk, ...
-    startDate = "juliandate(mission.StartDate)", ...
-    attitude = attitude0.q, ...
-    attitudeRate = attitude0.w);
-
-set_param(mission.mdl, ...
-    "SolverType", "Variable-step", ...
-    "SolverName", "VariableStepAuto", ...
-    "RelTol",     "0.5e-9", ...
-    "AbsTol",     "1e-9", ...
-    "MaxStep",    "5", ...
-    "MinStep",    "auto", ...
-    "StopTime",   string(seconds(mission.Duration)), ...
-    "SaveOutput", "on", ...
-    "OutputSaveName", "yout", ...
-    "SaveFormat", "Dataset", ...
-    "DatasetSignalFormat", "timetable");
+% INITS REGULAR BALL
+x0 = 0; y0 = 0; z0 = p.R; % m
+x_dot0 = 8; y_dot0 = -.45; z_dot0 = 0;% m/s
+phi0 = deg2rad(90); theta0 = deg2rad(90); psi0 = deg2rad(0); % rad
+phi_dot0 = 0; theta_dot0 = 0; psi_dot0 = -30; % rad/s
+position0 = [x0 y0 z0 x_dot0 y_dot0 z_dot0]';
+attitude0 = [phi0 theta0 psi0 phi_dot0 theta_dot0 psi_dot0]';
+X0 = [position0;attitude0];
 ```
-
-Simulation results for 10000 seconds (2.78 hours):
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/Nr.jpg" title="Spacecraft Position" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Spacecraft position in ECI coordinates.
-</div>

@@ -6,9 +6,9 @@ img:
 importance: 1
 category: School
 ---
-Here is a short progress report that describes the project: [Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
-
-Overview of the model:
+[Magneto-Attitude Propulsion Fall 2023 Progress Report](/assets/pdf/MagnetoFall2023Progress.pdf)  
+  
+Simulink model overview:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/map_full_sim.jpg" title="simulation overview" class="img-fluid rounded z-depth-1" %}
@@ -68,12 +68,57 @@ set_param(mission.mdl, ...
     "DatasetSignalFormat", "timetable");
 ```
 
-Simulation results for 10000 seconds (2.78 hours):
+The following plots show simulation results for 3 hours. There are 3 coordinate systems: N, B, and O. N is an Earth-centered inertial coordniate system. B is a spacecraft body-fixed coordinate system. O is a spacecraft-fixed orbit coordinate system, where o3 points from the spacecraft towards Earth's center, o2 points opposite the spacecraft's angular momentum, and o1 points in o2 x o3. In this run, the controller is setup to track the O coordinate system, so the B coordinate system follows the O coordinate system.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/Nr.jpg" title="Spacecraft Position" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Spacecraft position in ECI coordinates.
+    Spacecraft position in N coordinates.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Nv.jpg" title="Spacecraft Velocity" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Spacecraft velocity in N coordinates
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/BqN.jpg" title="Inertial Orientation" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Quaternion (scalar last) rotation from N coordiantes to B coordinates
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/BqO.jpg" title="Orbit Orientation" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Quaternion (scalar last) rotation from O coordinates to B coordinates
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/bwbn.jpg" title="Body Rate" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Angular velocity in B coordinates of the B coordinate system relative to the N coordinate system
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/bwbo.jpg" title="Body Rate" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Angular velocity in B coordinates of the B coordinate system relative to the O coordinate system
 </div>
