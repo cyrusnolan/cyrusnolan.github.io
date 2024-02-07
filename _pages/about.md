@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Aerospace Masters of Engineering Student studying guidance, navigation, and control of launch vehicles and spacecraft.
+subtitle: Aerospace Masters of Engineering Student interesting in guidance, navigation, and control of launch vehicles and spacecraft destined for entry, decent, and landing.
 
 profile:
   align: right
@@ -16,7 +16,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 <h2> About </h2>
-[Resume (pdf)](/assets/pdf/Cyrus%20Nolan%20Resume.pdf)  
+[Resume (pdf)](/assets/pdf/Cyrus-Nolan-Resume.pdf)  
 
 After graduating with my B.S. in Mechanical Engineering in 2019, I became interested in physical therapy and biomechanics because I had injuries and aspirations to play professional football. I worked in physical therapy while I rehabbed and trained for a professional tryout. During this time, I began to realize that there are much more interesting, cool, and impactful things I could do than play professional sports. I was inspired by the major events going on in spaceflight like Crew Dragon Demo-2, Falcon Heavy landing all 3 boosters for the first time, Starship's landing, and Inspiration 4. These events prompted me to return to school to study aerospace engineering.
 
