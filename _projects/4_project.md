@@ -15,7 +15,7 @@ Simulink model overview:
     </div>
 </div>
 
-Simulation results with inertia variation and noisy sensors where $$J = u^2$$:
+Simulation results with inertia variation, noisy sensors, and quadratic cost:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/rtoc_example.jpg" title="RTOC" class="img-fluid rounded z-depth-1" %}
