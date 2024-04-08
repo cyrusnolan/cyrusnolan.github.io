@@ -1,39 +1,19 @@
 ---
 layout: page
-title: Pontryagin Trajectory Optimization
-description: MAE 5830 - Astronautic Optimization course project
-img:
-importance: 4
-category: School
+title: Control of Inverted Pendulum
+description: MAE 5780 - Feedback Control Systems lab
+img: assets/img/pendy_cover.png
+importance: 2
+category:
 ---
-[Pontryagin Trajectory Optimization](/assets/pdf/AO5830Fall2023.pdf)  
-
-Simulink model overview:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/aomodel.jpg" title="simulation overview" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="assets/video/pole_pendy.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
-</div>
-
-Simulation results with inertia variation, noisy sensors, and quadratic cost:
-<div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/rtoc_example.jpg" title="RTOC" class="img-fluid rounded z-depth-1" %}
+        {% include video.html path="assets/video/leadlag_pendy.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/PV_example.jpg" title="PV" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="caption">
+    Left: State feedback control using pole placement, Right: Lead-Lag control using loop shaping
 </div>
-
-```matlab
-% PV Gains
-zeta = 0.7;
-ts = .9;
-tol = .05;
-wn = -log(tol*sqrt(1-zeta^2))/(zeta*ts);
-kp = wn^2;
-kv = 2*zeta*wn;
-```
