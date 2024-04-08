@@ -1,12 +1,12 @@
 ---
 layout: page
 title: ISS Trajectory Ground Track
-description: Personal project
-img:
+description: Plot a ground trace of the ISS trajcetory for the next user-specified number of hours
+img: assets/img/iss.jpg
 importance: 2
-category: Personal
+category:
 ---
-[https://github.com/cyrusnolan/ISS-Ground-Track](https://github.com/cyrusnolan/ISS-Ground-Track).  
+[https://github.com/cyrusnolan/ISS-Ground-Track](https://github.com/cyrusnolan/ISS-Ground-Track)
 Sample result:
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
