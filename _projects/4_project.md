@@ -3,7 +3,7 @@ layout: page
 title: Control of Inverted Pendulum
 description: MAE 5780 - Feedback Control Systems lab
 img: assets/img/pendy_cover.png
-importance: 2
+importance: 3
 category:
 ---
 <div class="row">

@@ -3,7 +3,7 @@ layout: page
 title: Bowling Ball Dynamics
 description: MAE 5730 - Intermediate Dynamics course project
 img: assets/img/bowlingball_cover.png
-importance: 3
+importance: 4
 category: School
 ---
 [https://github.com/cyrusnolan/bowling-ball-dynamics](https://github.com/cyrusnolan/bowling-ball-dynamics)
