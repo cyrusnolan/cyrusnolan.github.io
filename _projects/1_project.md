@@ -51,7 +51,7 @@ One might want to use this method rather than an ion thruster because this metho
     </div>
 </div>
 <div class="caption">
-    Figure (5): The spacecraft's angular momentum about its center of mass is decreasing in magnitude because its becoming less negative.
+    Figure (5): The spacecraft's angular momentum about its center of mass is decreasing in magnitude because it's becoming less negative.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -59,5 +59,5 @@ One might want to use this method rather than an ion thruster because this metho
     </div>
 </div>
 <div class="caption">
-    Figure (6): The spacecraft's orbital angular momentum is increasing because its becoming more negative.
+    Figure (6): The spacecraft's orbital angular momentum is increasing because it's becoming more negative.
 </div>
