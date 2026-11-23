@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage{amsmath}
+\renewcommand{\abstractname}{Synopsis}
 
-\title{Why should I not quit my job to do superintelligence research?}
+\title{Why should I not leave my job to do AI research?}
 \author{Cyrus Nolan}
 \date{2026-11-22}
 
@@ -11,23 +12,19 @@
 
 \begin{abstract}
 
-An abstract
+A synopsis
 
 \end{abstract}
 
-\section*{Objective}
-
-What is my goal? What do I value? What's my risk posture?
-
-My goal is to maximize my contribution to humanity. If you're rolling your eyes, I don't care. In my view, the decision variable to maximize over is vocation. Vocation isn't something static that one has no control over. It's something that one can play an active role in shaping and nurturing. The value of a vocation is some combination of the following terms:
+My guiding light is to maximize my contribution to humanity. If you're rolling your eyes, I don't care. In my view, the decision variable to maximize over is vocation. Vocation isn't something static that one has no control over. It's something that one can play an active role in shaping and nurturing. The value of a vocation for me is some combination of the following terms:
 
 \begin{itemize}
-  \item $C_{\mathrm{ceiling}}$: The contribution ceiling
-  \item $C_{\mathrm{marginal}}$: My marginal contribution
-  \item $C_{\Delta}$: The difference between my marginal contribution and my replacement's
+  \item $C_{\mathrm{ceiling}}(v)$: Contribution ceiling of vocation $v$
+  \item $C_{\mathrm{marginal}}(v)$: Marginal contribution of vocation $v$
+  \item $C_{\Delta}(v)$: The difference between my marginal contribution and my replacement's in vocation $v$
 \end{itemize}
 
-This can be written as an objective function that combines the terms via weighted sum. Then my goal can be restated as shaping vocation to maximize the objective function
+This can be written as an objective function that combines the terms via weighted sum.
 
 \[
   \text{objective}(v) = c_1 \, C_{\mathrm{ceiling}} + c_2 \, C_{\mathrm{marginal}} + c_3 \, C_{\Delta}
@@ -39,51 +36,6 @@ My goal can then be restated as shaping vocation to maximize the value function.
   v^* = \operatorname*{arg\,max}_{v \in \mathcal{V}} \text{objective}(v)
 \]
 
-I value autonomy. Without autonomy, vocation is constrained, and my objective function hitting a vocation constraint is like absolute worst case scenario nightmare fuel.
-
-I value meritocracy. To be more specific I value a fast feedback loop, where responsibility is rapidly adjusted with respect to performance with little consideration for tenure. High $k_p$ low $k_d$ vibes.
-
-I value being part of a team. Working with others introduces interpersonal challenges that don't exist when working alone, but this is a small price to pay for the benefits of a team. The ceiling of a team is infinite, or at least orders of magnitude higher than the ceiling of someone working on their own.
-
-I value single-minded dedication to a goal, grittiness, team before self, kind heartedness, realness/transparency, and humility. I've worked in environments for which the last two are missing, and it's simply untenable for me.
-
-My risk posture is pretty simple. High tolerance for risk to self. This can manifest as high risk-reward tolerance in decision making with respect to vocation. I will promptly change course or like move across the world if it aligns with vocation. This can also manifest as personal sacrifice for the good of the team. Ultimately, making a thesis based in solid rationale and acting on it as asap as possible, even if it requires taking an unconventional path. Conversely, I have a low tolerance for risk to others generated as a result of my actions
-
-\section*{Superintelligence Research as a Vocation}
-
 Let's assess the objective function as a function of superintelligence research as the vocation. The ceiling is undeniably high - exactly how high may be up for debate. We can group options into a few buckets.
-
-
-Does superintelligence researh have a high absolute impact? It clearly has so far, with the advent of large language models assisting in software development and daily life. And the potential impact is unboundedly high. The question is how likely and how soon we develop superintelligence.
-
-I think superintelligence is likely in the next 2-20 years. Ilya said we're moving from the age of scaling (throwing more data at the problem) to the age of research (coming up with new paradigms, should look up with theory here).
-
-Yann says that we need more breakthroughs to develop human level machine intelligence.
-
-So the following is true:
-- superintelligence could happen soon, I see this as highly urgent
-- according to Ilya and Yann, the outcome depends on what people do now.
-  - we may need new ideas to actually acheive human level machine intelligence (capabilities research, i.e. new architectures, new training methods)
-  - we need to work on safety so that superintelligence doesn't destroy humans (alignment and interpretability research, governance)
-
-Is the field bottlenecked by number of researchers?
-
-
-\section*{Counterfactual Impact}
-
-I've defined this as the difference between my marginal contribution/impact over the average replacement, for both my current job and SI research.
-
-I'm best suited for working on novel problems in research or engineering because it motivates me and I'm good at it. What evidence do I have of this? I think this stems from persistence and motivation, which are required for researching open-ended problems.
-
-My reward function is tailored for novel research. Also because in research persistence and intensity correlate strongly with outcomes.
-
-My reward function is impact, not money or hobbies. Prefer extreme depth --> impact.
-
-Worth examining what actually drives quality research
-
-In many fields, outcomes scale somewhat linearly with quality of worker.
-Research is closer to zero sum, where the impactful work comes from a small fraction of people, and most people produce near zero impact work. This suggests small differences in quality can lead to large differences in outcome.
-
-While my current job is niche, there's an impact ceiling. that's because Dragon is operational, not developmental. Most engineering hours are spent doing mission recurring work, which is designed to make the outcome (mission success) robust to differences in ability between responsible engineer.
 
 \end{document}
