@@ -1,0 +1,4 @@
+-Iglad/include
+-Wall
+-Wextra
+
